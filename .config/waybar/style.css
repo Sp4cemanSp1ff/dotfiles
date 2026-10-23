@@ -1,0 +1,22 @@
+/* Waybar Base Styling */
+window#waybar {
+    background-color: rgba(26, 27, 38, 0.85); /* Dark translucent background */
+    border-bottom: 2px solid rgba(112, 128, 144, 0.3);
+    color: #ffffff;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 13px;
+}
+
+/* Individual Module Blocks */
+#clock, #cpu, #memory, #battery, #workspaces {
+    padding: 0 10px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    background-color: rgba(47, 52, 63, 0.6);
+}
+
+#workspaces button.active {
+    background-color: #7aa2f7; /* Highlighting active tiling workspace */
+    color: #1a1b26;
+}
+EOF

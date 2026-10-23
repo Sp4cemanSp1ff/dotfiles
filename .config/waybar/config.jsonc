@@ -1,0 +1,25 @@
+{
+    "layer": "top", 
+    "position": "top", 
+    "height": 30, 
+    "spacing": 4, 
+    "modules-left": ["hyprland/workspaces", "hyprland/submap"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["cpu", "memory", "battery", "clock", "tray"],
+
+    // Module Definitions
+    "clock": {
+        "format": "{:%R | %A, %B %d}", // %R forces 24-hour HH:MM time layout
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "RAM: {}%"
+    },
+    "battery": {
+        "format": "BAT: {capacity}%"
+    }
+}
